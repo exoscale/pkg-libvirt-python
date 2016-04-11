@@ -1,5 +1,6 @@
-libvirt-python (1.2.15-0ubuntu1~exo1) precise; urgency=medium
+libvirt-python (1.2.21-0ubuntu0~exo1) precise; urgency=medium
 
+  * New upstream release.
   * Backport for Precise.
 
  -- Vincent Bernat <bernat@debian.org>  Fri, 22 May 2015 16:53:12 +0200
