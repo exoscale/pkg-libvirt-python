@@ -1,0 +1,6 @@
+Tests: smoke3
+Depends:
+ python3-all,
+ python3-libvirt,
+ python3-pytest
+Restrictions: allow-stderr

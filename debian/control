@@ -1,0 +1,26 @@
+Source: libvirt-python
+Section: python
+Priority: optional
+Maintainer: Guido Günther <agx@sigxcpu.org>
+Build-Depends: debhelper-compat (=13),
+ dh-python,
+ pkg-config,
+ python3-all-dev,
+ python3-pytest,
+ libvirt-dev (>= 4.5.0~),
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/libvirt-team/libvirt-python.git
+Vcs-Browser: https://salsa.debian.org/libvirt-team/libvirt-python
+Homepage: http://libvirt.org
+
+Package: python3-libvirt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python3:Depends}, libvirt0 (>= 4.5.0~)
+Recommends: libvirt-daemon
+Description: libvirt Python 3 bindings
+ Libvirt is a C toolkit to interact with the virtualization capabilities
+ of recent versions of Linux (and other OSes). The library aims at providing
+ a long term stable C API for different virtualization mechanisms. It currently
+ supports QEMU, KVM, XEN, OpenVZ, LXC, and VirtualBox.
+ .
+ This package contains the Python 3 bindings for the libvirt library
